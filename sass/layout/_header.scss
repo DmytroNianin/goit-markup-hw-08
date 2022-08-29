@@ -6,6 +6,10 @@
 .header-menu {
   display: flex;
   align-items: center;
+  display: none;
+  @include tablet {
+    display: flex;
+  }
 }
 
 .logo {
@@ -24,17 +28,16 @@
 }
 
 .header-logo {
+  @include tablet {
+    margin-right: 87px;
+  }
 }
 
 .logo__studio {
   color: #000000;
 }
 
-.menu__desktop {
-  display: none;
-  @include tablet {
-    display: block;
-  }
+.navigation {
 }
 
 .navigation__list {
@@ -80,12 +83,16 @@
 }
 
 .header__connect {
-  display: flex;
-  margin-left: auto;
+  @include tablet {
+    margin-left: auto;
+  }
 }
 
 .header__connect .connect__item + .connect__item {
-  margin-left: 50px;
+  margin-top: 10px;
+  @include desktop {
+    margin-left: 50px;
+  }
 }
 
 .connect__mail {
