@@ -8,14 +8,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include tablet {
+    width: 50%;
+  }
+  @include desktop {
+    display: block;
+    width: auto;
+  }
 }
 
 .footer-content {
-  // display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  // align-items: baseline;
+  @include tablet {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  @include desktop {
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }
 
 .footer-logo {
@@ -49,7 +61,9 @@
 }
 
 .footer-address {
-  display: contents;
+  @media screen and (max-width: 1200px) {
+    display: contents;
+  }
 }
 
 .footer-text {
@@ -93,20 +107,28 @@
   &:focus {
     color: var(--text-hover-color);
   }
+  @include desktop {
+    margin-bottom: 0;
+  }
 }
 
 .join-conteiner {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  @media screen and (max-width: 1200px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  @include tablet {
+    width: 50%;
+  }
   @include desktop {
+    width: auto;
     margin-left: 70px;
   }
 }
 
 .join-titel {
-  display: flex;
-  justify-content: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -114,11 +136,18 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+  @media screen and (max-width: 1200) {
+    display: flex;
+    justify-content: center;
+  }
 }
 .join-soc {
   display: flex;
   gap: 10px;
   margin-bottom: 60px;
+  @include desktop {
+    margin-bottom: 0;
+  }
 }
 
 .join-soc-link {
@@ -150,6 +179,9 @@
 }
 
 .footer-form {
+  @include desktop {
+    padding-top: 12px;
+  }
 }
 
 .subscribe-text {
@@ -162,17 +194,28 @@
   text-transform: uppercase;
   color: var(--icon-hover-color);
   margin-bottom: 20px;
+  @include desktop {
+    display: block;
+  }
 }
 
 .footer-field {
   display: flex;
   align-items: center;
   flex-direction: column;
+  @include tablet {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+  @include desktop {
+    flex-direction: row;
+    align-items: baseline;
+    width: auto;
+  }
 }
 
 .footer-input {
   display: block;
-  // display: flex;
   padding-left: 16px;
   margin-bottom: 20px;
   min-width: 100%;
@@ -190,15 +233,19 @@
   }
 
   @include desktop {
-    width: 358px;
+    display: flex;
+    min-width: 358px;
+    margin-bottom: 0;
   }
 }
 
 .footer-btn {
-  // margin-left: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
+  @include desktop {
+    margin-left: 12px;
+  }
 }
 
 .sub-icon {
