@@ -3,12 +3,10 @@
   border-bottom: 1px solid #ececec;
 }
 
-.header.conteiner {
-  @include tablet {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+.header .conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header-menu {
@@ -34,11 +32,6 @@
   padding-top: 24px;
   padding-bottom: 25px;
   display: inline-block;
-  position: absolute;
-  left: 15px;
-  @include tablet {
-    position: static;
-  }
 }
 
 .header-logo {
