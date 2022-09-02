@@ -1212,6 +1212,18 @@ body.modal {
   padding: 40px;
   overflow: auto;
 }
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
+}
 .back.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
 }
@@ -1320,8 +1332,8 @@ body.modal {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -1348,8 +1360,8 @@ body.modal {
 }
 
 .check-link {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: #2196f3;
