@@ -3,12 +3,23 @@
   border-bottom: 1px solid #ececec;
 }
 
+.header.conteiner {
+  @include tablet {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
 .header-menu {
-  display: flex;
   align-items: center;
   display: none;
   @include tablet {
     display: flex;
+    width: 100%;
+  }
+  @include desktop {
+    align-self: baseline;
   }
 }
 
@@ -25,11 +36,17 @@
   display: inline-block;
   position: absolute;
   left: 15px;
+  @include tablet {
+    position: static;
+  }
 }
 
 .header-logo {
   @include tablet {
     margin-right: 87px;
+  }
+  @include desktop {
+    margin-right: 92px;
   }
 }
 
@@ -86,12 +103,17 @@
   @include tablet {
     margin-left: auto;
   }
+  @include desktop {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .header__connect .connect__item + .connect__item {
   margin-top: 10px;
   @include desktop {
     margin-left: 50px;
+    margin-top: 0;
   }
 }
 

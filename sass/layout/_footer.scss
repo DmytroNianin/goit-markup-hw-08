@@ -210,7 +210,7 @@
   @include desktop {
     flex-direction: row;
     align-items: baseline;
-    width: auto;
+    width: 358px;
   }
 }
 
@@ -234,7 +234,7 @@
 
   @include desktop {
     display: flex;
-    min-width: 358px;
+    width: 358px;
     margin-bottom: 0;
   }
 }
