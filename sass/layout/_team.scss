@@ -5,13 +5,17 @@
 }
 .team-title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.18;
+
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color-black);
-
   margin-bottom: 50px;
+  @include desktop {
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 .team-list {
   display: inline-flex;

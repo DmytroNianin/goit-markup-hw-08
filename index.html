@@ -34,11 +34,15 @@
           <nav class="navigation">
             <ul class="navigation__list list">
               <li class="navigation__item">
-                <a href="./index.html" class="navigation__link link current"> Студия </a>
+                <a href="./index.html" class="navigation__link link current">
+                  Студия
+                </a>
               </li>
 
               <li class="navigation__item">
-                <a href="./porfolio.html" class="navigation__link link"> Портфолио </a>
+                <a href="./porfolio.html" class="navigation__link link">
+                  Портфолио
+                </a>
               </li>
 
               <li class="navigation__item">
@@ -69,7 +73,10 @@
         </div>
         <button type="button" class="menu__btn js-open-menu">
           <svg width="40" height="40" aria-label="Вызов мобильного меню">
-            <use class="menu__open .js-open-menu" href="./img/icons.svg#icon-menu"></use>
+            <use
+              class="menu__open .js-open-menu"
+              href="./img/icons.svg#icon-menu"
+            ></use>
           </svg>
         </button>
       </div>
@@ -88,28 +95,44 @@
             </button>
             <ul class="menu__nav list">
               <li class="menu__item">
-                <a href="./index.html" class="menu__link link current">Студия</a>
+                <a href="./index.html" class="menu__link link current"
+                  >Студия</a
+                >
               </li>
               <li class="menu__item">
                 <a href="./porfolio.html" class="menu__link link">Портфолио</a>
               </li>
-              <li class="menu__item"><a href="" class="menu__link link">Контакты</a></li>
+              <li class="menu__item">
+                <a href="" class="menu__link link">Контакты</a>
+              </li>
             </ul>
           </div>
           <div class="mob-menu-bottom">
             <ul class="contact list">
               <li class="contact__item">
-                <a href="tel:+380961111111" class="contact__tel">+380961111111</a>
+                <a href="tel:+380961111111" class="contact__tel"
+                  >+380961111111</a
+                >
               </li>
               <li class="contact__item">
-                <a href="mailto:info@devstudio.com" class="contact__mail">info@devstudio.com</a>
+                <a href="mailto:info@devstudio.com" class="contact__mail"
+                  >info@devstudio.com</a
+                >
               </li>
             </ul>
             <ul class="soc list">
-              <li class="soc__item"><a href="" class="soc__link link">Instagram</a></li>
-              <li class="soc__item"><a href="" class="soc__link link">Twitter</a></li>
-              <li class="soc__item"><a href="" class="soc__link link">Facebook</a></li>
-              <li class="soc__item"><a href="" class="soc__link link">LinkedIn</a></li>
+              <li class="soc__item">
+                <a href="" class="soc__link link">Instagram</a>
+              </li>
+              <li class="soc__item">
+                <a href="" class="soc__link link">Twitter</a>
+              </li>
+              <li class="soc__item">
+                <a href="" class="soc__link link">Facebook</a>
+              </li>
+              <li class="soc__item">
+                <a href="" class="soc__link link">LinkedIn</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -125,7 +148,9 @@
             <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="hero__btn btn" data-modal-open>Заказать услугу</button>
+          <button type="button" class="hero__btn btn" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
 
@@ -142,7 +167,8 @@
               </div>
               <h3 class="featur__title">Внимание к деталям</h3>
               <p class="featur__text">
-                Идейные соображения, а также начало повседневной работы по формированию позиции.
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
               </p>
             </li>
 
@@ -154,7 +180,8 @@
               </div>
               <h3 class="featur__title">Пунктуальность</h3>
               <p class="featur__text">
-                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+                Задача организации, в особенности же рамки и место обучения
+                кадров влечет за собой.
               </p>
             </li>
 
@@ -166,7 +193,8 @@
               </div>
               <h3 class="featur__title">Планирование</h3>
               <p class="featur__text">
-                Равным образом консультация с широким активом в значительной степени обуславливает.
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
               </p>
             </li>
 
@@ -178,7 +206,8 @@
               </div>
               <h3 class="featur__title">Современные технологии</h3>
               <p class="featur__text">
-                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
               </p>
             </li>
           </ul>
@@ -192,17 +221,56 @@
           <h2 class="about-title">Чем мы занимаемся</h2>
           <ul class="about-img-list list">
             <li class="about-item">
-              <img src="./img/index/coding.jpg" alt="кодинг" width="370" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/index/coding.jpg    1x,
+                    ./img/index/coding-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <img src="./img/index/coding.jpg" alt="кодинг" />
+              </picture>
+
               <p class="about-img-titel">Десктопные приложения</p>
             </li>
 
             <li class="about-item">
-              <img src="./img/index/comparison.jpg" alt="проверка соответствия" width="370" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/index/comparison.jpg    1x,
+                    ./img/index/comparison-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <img
+                  src="./img/index/comparison.jpg"
+                  alt="проверка соответствия"
+                  width="370px"
+                  height="294px"
+                />
+              </picture>
               <p class="about-img-titel">Мобильные приложения</p>
             </li>
 
             <li class="about-item">
-              <img src="./img/index/stylization.jpg" alt="стилизация" width="370" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/index/stylization.jpg    1x,
+                    ./img/index/stylization-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <img
+                  src="./img/index/stylization.jpg"
+                  alt="стилизация"
+                  width="370px"
+                  height="294px"
+                />
+              </picture>
+
               <p class="about-img-titel">Дизайнерские решения</p>
             </li>
           </ul>
@@ -216,7 +284,36 @@
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-item">
-              <img src="./img/index/productdesigner.jpg" alt="Игорь Демьяненко" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/index/productdesigner.jpg    1x,
+                    ./img/index/productdesigner-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/index/productdesigner-tab.jpg    1x,
+                    ./img/index/productdesigner-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/index/productdesigner-mob.jpg    1x,
+                    ./img/index/productdesigner-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./img/index/productdesigner.jpg"
+                  alt="Игорь Демьяненко"
+                  width="450"
+                  height="460"
+                />
+              </picture>
+
               <h3 class="team-member">Игорь Демьяненко</h3>
               <p class="team-speciality">Product Designer</p>
               <ul class="team-soc list">
@@ -255,7 +352,36 @@
             </li>
 
             <li class="team-item">
-              <img src="./img/index/frontenddeveloper.jpg" alt="Ольга Репина" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/index/frontenddeveloper.jpg    1x,
+                    ./img/index/frontenddeveloper-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/index/frontenddeveloper-tab.jpg    1x,
+                    ./img/index/frontenddeveloper-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/index/frontenddeveloper-mob.jpg    1x,
+                    ./img/index/frontenddeveloper-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./img/index/frontenddeveloper.jpg"
+                  alt="Ольга Репина"
+                  width="450"
+                  height="460"
+                />
+              </picture>
+
               <h3 class="team-member">Ольга Репина</h3>
               <p class="team-speciality">Frontend Developer</p>
               <ul class="team-soc list">
@@ -294,7 +420,36 @@
             </li>
 
             <li class="team-item">
-              <img src="./img/index/marketing.jpg" alt="Николай Тарасов" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/index/marketing.jpg    1x,
+                    ./img/index/marketing-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/index/marketing-tab.jpg    1x,
+                    ./img/index/marketing-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/index/marketing-mob.jpg    1x,
+                    ./img/index/marketing-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./img/index/marketing.jpg"
+                  alt="Николай Тарасов"
+                  width="450"
+                  height="460"
+                />
+              </picture>
+
               <h3 class="team-member">Николай Тарасов</h3>
               <p class="team-speciality">Marketing</p>
               <ul class="team-soc list">
@@ -333,7 +488,36 @@
             </li>
 
             <li class="team-item">
-              <img src="./img/index/uidesigner.jpg" alt="Михаил Ермаков" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/index/uidesigner.jpg    1x,
+                    ./img/index/uidesigner-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/index/uidesigner-tab.jpg    1x,
+                    ./img/index/uidesigner-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/index/uidesigner-mob.jpg    1x,
+                    ./img/index/uidesigner-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./img/index/uidesigner.jpg"
+                  alt="Михаил Ермаков"
+                  width="450"
+                  height="460"
+                />
+              </picture>
+
               <h3 class="team-member">Михаил Ермаков</h3>
               <p class="team-speciality">UI Designer</p>
               <ul class="team-soc list">
@@ -442,8 +626,12 @@
           </a>
           <address class="footer-address">
             <p class="footer-text">г. Киев, пр-т Леси Украинки, 26</p>
-            <a href="mailto:info@devstudio.com" class="footer-mail link"> info@devstudio.com </a>
-            <a href="tel:+380961111111" class="footer-tel link"> +380961111111 </a>
+            <a href="mailto:info@devstudio.com" class="footer-mail link">
+              info@devstudio.com
+            </a>
+            <a href="tel:+380961111111" class="footer-tel link">
+              +380961111111
+            </a>
           </address>
         </div>
 
@@ -522,7 +710,12 @@
             <div class="modal-field">
               <label class="modal-lable" for="user-name"> Имя </label>
               <div class="input-wrap">
-                <input type="text" class="modal-input" name="user-name" id="user-name" />
+                <input
+                  type="text"
+                  class="modal-input"
+                  name="user-name"
+                  id="user-name"
+                />
                 <svg class="input-icon" width="18" height="18">
                   <use href="./img/icons.svg#icon-person-black"></use>
                 </svg>
@@ -531,7 +724,12 @@
             <div class="modal-field">
               <label class="modal-lable" for="user-tel"> Телефон </label>
               <div class="input-wrap">
-                <input type="tel" class="modal-input" name="user-tel" id="user-tel" />
+                <input
+                  type="tel"
+                  class="modal-input"
+                  name="user-tel"
+                  id="user-tel"
+                />
                 <svg class="input-icon" width="18" height="18">
                   <use href="./img/icons.svg#icon-phone-black"></use>
                 </svg>
@@ -540,7 +738,12 @@
             <div class="modal-field">
               <label class="modal-lable" for="user-email"> Почта </label>
               <div class="input-wrap">
-                <input type="email" class="modal-input" name="user-email" id="user-email" />
+                <input
+                  type="email"
+                  class="modal-input"
+                  name="user-email"
+                  id="user-email"
+                />
                 <svg class="input-icon" width="18" height="18">
                   <use href="./img/icons.svg#icon-email-black"></use>
                 </svg>
