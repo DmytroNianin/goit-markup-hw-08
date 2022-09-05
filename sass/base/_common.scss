@@ -1,16 +1,19 @@
 body {
-	font-family: "Roboto", sans-serif;
-	color: #212121;
+  font-family: 'Roboto', sans-serif;
+  color: #212121;
 }
 
 .list {
-	list-style: none;
+  list-style: none;
 }
 
 .link {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .section {
-	padding: 94px 0;
+  padding: 60px 0;
+  @include desktop {
+    padding: 94px 0;
+  }
 }

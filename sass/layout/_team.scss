@@ -1,7 +1,5 @@
 .team {
   background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .team-title {
   font-weight: 700;
@@ -11,10 +9,11 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color-black);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   @include desktop {
     font-size: 36px;
     line-height: 1.16;
+    margin-bottom: 50px;
   }
 }
 .team-list {
